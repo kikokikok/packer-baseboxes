@@ -1,0 +1,14 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+- script: choco install packer
+  displayName: 'echo install packer'
+
+- script: packer-build-verbose-logged.cmd Chyperv-centos-7-ebpf.json
+  displayName: 'echo Build script for centos 7 eBPF with 4.9 kernel on HyperV !'
