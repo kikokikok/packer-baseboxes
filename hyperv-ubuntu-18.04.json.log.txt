@@ -1,0 +1,160 @@
+2018/09/29 14:05:36 [INFO] Packer version: 1.3.0
+2018/09/29 14:05:36 Packer Target OS/Arch: windows amd64
+2018/09/29 14:05:36 Built with Go Version: go1.11
+2018/09/29 14:05:36 Using internal plugin for cloudstack
+2018/09/29 14:05:36 Using internal plugin for hyperv-vmcx
+2018/09/29 14:05:36 Using internal plugin for parallels-pvm
+2018/09/29 14:05:36 Using internal plugin for alicloud-ecs
+2018/09/29 14:05:36 Using internal plugin for oracle-oci
+2018/09/29 14:05:36 Using internal plugin for amazon-ebssurrogate
+2018/09/29 14:05:36 Using internal plugin for hyperv-iso
+2018/09/29 14:05:36 Using internal plugin for lxd
+2018/09/29 14:05:36 Using internal plugin for triton
+2018/09/29 14:05:36 Using internal plugin for virtualbox-ovf
+2018/09/29 14:05:36 Using internal plugin for amazon-ebs
+2018/09/29 14:05:36 Using internal plugin for file
+2018/09/29 14:05:36 Using internal plugin for lxc
+2018/09/29 14:05:36 Using internal plugin for null
+2018/09/29 14:05:36 Using internal plugin for amazon-ebsvolume
+2018/09/29 14:05:36 Using internal plugin for azure-arm
+2018/09/29 14:05:36 Using internal plugin for oneandone
+2018/09/29 14:05:36 Using internal plugin for amazon-chroot
+2018/09/29 14:05:36 Using internal plugin for googlecompute
+2018/09/29 14:05:36 Using internal plugin for profitbricks
+2018/09/29 14:05:36 Using internal plugin for qemu
+2018/09/29 14:05:36 Using internal plugin for virtualbox-iso
+2018/09/29 14:05:36 Using internal plugin for vmware-iso
+2018/09/29 14:05:36 Using internal plugin for vmware-vmx
+2018/09/29 14:05:36 Using internal plugin for scaleway
+2018/09/29 14:05:36 Using internal plugin for amazon-instance
+2018/09/29 14:05:36 Using internal plugin for digitalocean
+2018/09/29 14:05:36 Using internal plugin for docker
+2018/09/29 14:05:36 Using internal plugin for ncloud
+2018/09/29 14:05:36 Using internal plugin for openstack
+2018/09/29 14:05:36 Using internal plugin for oracle-classic
+2018/09/29 14:05:36 Using internal plugin for parallels-iso
+2018/09/29 14:05:36 Using internal plugin for chef-client
+2018/09/29 14:05:36 Using internal plugin for shell
+2018/09/29 14:05:36 Using internal plugin for ansible-local
+2018/09/29 14:05:36 Using internal plugin for converge
+2018/09/29 14:05:36 Using internal plugin for ansible
+2018/09/29 14:05:36 Using internal plugin for powershell
+2018/09/29 14:05:36 Using internal plugin for puppet-server
+2018/09/29 14:05:36 Using internal plugin for windows-restart
+2018/09/29 14:05:36 Using internal plugin for shell-local
+2018/09/29 14:05:36 Using internal plugin for windows-shell
+2018/09/29 14:05:36 Using internal plugin for chef-solo
+2018/09/29 14:05:36 Using internal plugin for file
+2018/09/29 14:05:36 Using internal plugin for puppet-masterless
+2018/09/29 14:05:36 Using internal plugin for salt-masterless
+2018/09/29 14:05:36 Using internal plugin for docker-save
+2018/09/29 14:05:36 Using internal plugin for googlecompute-import
+2018/09/29 14:05:36 Using internal plugin for vagrant
+2018/09/29 14:05:36 Using internal plugin for alicloud-import
+2018/09/29 14:05:36 Using internal plugin for checksum
+2018/09/29 14:05:36 Using internal plugin for docker-tag
+2018/09/29 14:05:36 Using internal plugin for vagrant-cloud
+2018/09/29 14:05:36 Using internal plugin for amazon-import
+2018/09/29 14:05:36 Using internal plugin for artifice
+2018/09/29 14:05:36 Using internal plugin for compress
+2018/09/29 14:05:36 Using internal plugin for docker-import
+2018/09/29 14:05:36 Using internal plugin for docker-push
+2018/09/29 14:05:36 Using internal plugin for vsphere
+2018/09/29 14:05:36 Using internal plugin for googlecompute-export
+2018/09/29 14:05:36 Using internal plugin for manifest
+2018/09/29 14:05:36 Using internal plugin for shell-local
+2018/09/29 14:05:36 Using internal plugin for vsphere-template
+2018/09/29 14:05:36 Attempting to open config file: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 [WARN] Config file doesn't exist: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[hyperv-vmcx:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx virtualbox-ovf:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf file:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file profitbricks:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks scaleway:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-scaleway cloudstack:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack hyperv-iso:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso null:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null amazon-ebsvolume:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume googlecompute:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute vmware-vmx:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx parallels-pvm:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm lxd:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd azure-arm:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm amazon-instance:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance digitalocean:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean oracle-oci:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci qemu:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu docker:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker ncloud:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-ncloud lxc:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc oracle-classic:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-classic parallels-iso:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso amazon-ebssurrogate:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate amazon-ebs:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs virtualbox-iso:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso vmware-iso:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso alicloud-ecs:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs triton:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton oneandone:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone openstack:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack amazon-chroot:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot] PostProcessors:map[vsphere:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere googlecompute-import:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-import vagrant:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant alicloud-import:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import docker-tag:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag vagrant-cloud:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud amazon-import:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import manifest:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest shell-local:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local docker-save:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save artifice:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice compress:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress docker-import:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-push:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push googlecompute-export:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export vsphere-template:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template checksum:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum] Provisioners:map[chef-client:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client converge:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge shell-local:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local windows-shell:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell file:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file shell:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell powershell:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-masterless:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless salt-masterless:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless ansible-local:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local ansible:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible puppet-server:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server windows-restart:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart chef-solo:C:\HashiCorp\Vagrant\bin\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo]}
+2018/09/29 14:05:36 Setting cache directory: C:\Projects\packer-projects\packer-baseboxes\packer_cache
+2018/09/29 14:05:36 Loading builder: hyperv-iso
+2018/09/29 14:05:36 Plugin could not be found. Checking same directory as executable.
+2018/09/29 14:05:36 Current exe path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Creating plugin client for path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Starting plugin: C:\HashiCorp\Vagrant\bin\packer.exe []string{"C:\\HashiCorp\\Vagrant\\bin\\packer.exe", "plugin", "packer-builder-hyperv-iso"}
+2018/09/29 14:05:36 Waiting for RPC address for: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [INFO] Packer version: 1.3.0
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer Target OS/Arch: windows amd64
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Built with Go Version: go1.11
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Attempting to open config file: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [WARN] Config file doesn't exist: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Setting cache directory: C:\Projects\packer-projects\packer-baseboxes\packer_cache
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 args: []string{"packer-builder-hyperv-iso"}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin minimum port: 10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin maximum port: 25000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin address: tcp 127.0.0.1:10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Waiting for connection...
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Serving a plugin connection...
+2018/09/29 14:05:36 Loading provisioner: shell
+2018/09/29 14:05:36 Plugin could not be found. Checking same directory as executable.
+2018/09/29 14:05:36 Current exe path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Creating plugin client for path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Starting plugin: C:\HashiCorp\Vagrant\bin\packer.exe []string{"C:\\HashiCorp\\Vagrant\\bin\\packer.exe", "plugin", "packer-provisioner-shell"}
+2018/09/29 14:05:36 Waiting for RPC address for: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [INFO] Packer version: 1.3.0
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer Target OS/Arch: windows amd64
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Built with Go Version: go1.11
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Attempting to open config file: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [WARN] Config file doesn't exist: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Setting cache directory: C:\Projects\packer-projects\packer-baseboxes\packer_cache
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 args: []string{"packer-provisioner-shell"}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin minimum port: 10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin maximum port: 25000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin address: tcp 127.0.0.1:10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Waiting for connection...
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Serving a plugin connection...
+2018/09/29 14:05:36 Loading post-processor: vagrant
+2018/09/29 14:05:36 Plugin could not be found. Checking same directory as executable.
+2018/09/29 14:05:36 Current exe path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Creating plugin client for path: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 Starting plugin: C:\HashiCorp\Vagrant\bin\packer.exe []string{"C:\\HashiCorp\\Vagrant\\bin\\packer.exe", "plugin", "packer-post-processor-vagrant"}
+2018/09/29 14:05:36 Waiting for RPC address for: C:\HashiCorp\Vagrant\bin\packer.exe
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [INFO] Packer version: 1.3.0
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer Target OS/Arch: windows amd64
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Built with Go Version: go1.11
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Attempting to open config file: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 [WARN] Config file doesn't exist: C:\Users\kikok\AppData\Roaming\packer.config
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Setting cache directory: C:\Projects\packer-projects\packer-baseboxes\packer_cache
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 args: []string{"packer-post-processor-vagrant"}
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin minimum port: 10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin maximum port: 25000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Plugin address: tcp 127.0.0.1:10000
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Waiting for connection...
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Serving a plugin connection...
+2018/09/29 14:05:36 ui: [1;32mhyperv-iso output will be in this color.[0m
+2018/09/29 14:05:36 ui: 
+2018/09/29 14:05:36 Build debug mode: false
+2018/09/29 14:05:36 Force build: false
+2018/09/29 14:05:36 On error: 
+2018/09/29 14:05:36 Preparing build: hyperv-iso
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 DiskSize: 21440
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 DiskBlockSize: 32
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 RamSize: 2048
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 VMName: ubuntu-bionic
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Using switch packer-hyperv-iso
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 SwitchName: packer-hyperv-iso
+2018/09/29 14:05:36 Waiting on builds to complete...
+2018/09/29 14:05:36 Starting build run: hyperv-iso
+2018/09/29 14:05:36 Running builder: hyperv-iso
+2018/09/29 14:05:36 [INFO] (telemetry) Starting builder hyperv-iso
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Enter method: verifyPSVersion
+2018/09/29 14:05:36 packer.exe: 2018/09/29 14:05:36 Cannot find PowerShell in the path
+2018/09/29 14:05:36 [INFO] (telemetry) ending hyperv-iso
+2018/09/29 14:05:36 ui error: [1;31mBuild 'hyperv-iso' errored: unexpected EOF[0m
+2018/09/29 14:05:36 Builds completed. Waiting on interrupt barrier...
+2018/09/29 14:05:36 machine readable: error-count []string{"1"}
+2018/09/29 14:05:36 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2018/09/29 14:05:36 machine readable: hyperv-iso,error []string{"unexpected EOF"}
+2018/09/29 14:05:36 ui error: --> hyperv-iso: unexpected EOF
+2018/09/29 14:05:36 ui: 
+==> Builds finished but no artifacts were created.
+2018/09/29 14:05:36 [INFO] (telemetry) Finalizing.
+2018/09/29 14:05:36 C:\HashiCorp\Vagrant\bin\packer.exe: plugin process exited
+2018/09/29 14:05:37 waiting for all plugin processes to complete...
+2018/09/29 14:05:37 C:\HashiCorp\Vagrant\bin\packer.exe: plugin process exited
+2018/09/29 14:05:37 C:\HashiCorp\Vagrant\bin\packer.exe: plugin process exited

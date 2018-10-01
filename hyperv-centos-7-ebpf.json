@@ -1,0 +1,67 @@
+{
+    "variables": {
+      "vm_name": "centos7-ebpf",
+      "cpu": "2",
+      "ram_size": "4096",
+      "disk_size": "81920",
+      "iso_url": "http://mirror.cogentco.com/pub/linux/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso",
+      "iso_checksum_type": "sha256",
+      "iso_checksum": "506e4e06abf778c3435b4e5745df13e79ebfc86565d7ea1e128067ef6b5a6345",
+      "hyperv_switchname": "{{env `hyperv_switchname`}}",
+      "username" : "vagrant",
+      "password" : "vagrant"
+    },
+    "builders": [
+    {
+      "vm_name":"{{user `vm_name`}}",
+      "type": "hyperv-iso",
+      "disk_size": "{{user `disk_size`}}",
+      "guest_additions_mode":"disable",
+      "iso_url": "{{user `iso_url`}}",
+      "iso_checksum_type": "{{user `iso_checksum_type`}}",
+      "iso_checksum": "{{user `iso_checksum`}}",
+      "communicator":"ssh",
+      "ssh_username": "{{user `username`}}",
+      "ssh_password": "{{user `password`}}",	
+      "ssh_timeout" : "4h",
+      "http_directory": "./linux/ubuntu/http/",
+      "boot_wait": "5s",
+      "boot_command": [
+        "c  setparams 'kickstart' <enter> linuxefi /images/pxeboot/vmlinuz inst.stage2=hd:LABEL=CentOS\\x207\\x20x\\86_64 inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter> initrdefi /images/pxeboot/initrd.img<enter> boot<enter>"
+      ],
+      "shutdown_command": "echo 'vagrant' | sudo -S -E shutdown -P now",
+      "ram_size": "{{user `ram_size`}}",
+      "cpu": "{{user `cpu`}}",
+      "generation": 2,
+      "switch_name":"{{user `hyperv_switchname`}}",
+      "enable_secure_boot":false
+    }],
+    "provisioners":
+     [
+         {
+            "type": "shell",
+            "execute_command": "echo 'vagrant' | sudo -S -E sh {{.Path}}",
+            "scripts": [
+                "./linux/centos/kernel-upgrade.sh"
+            ]
+        },
+        {
+            "type": "shell",
+            "execute_command": "echo 'vagrant' | sudo -S -E sh {{.Path}}",
+            "scripts": [
+                "./linux/ubuntu/network.sh",
+                "./linux/common/vagrant.sh",
+                "./linux/common/motd.sh",
+                "./linux/ubuntu/cleanup.sh",
+                "./linux/centos/ebpf-install.sh"
+            ]
+        }
+    ],
+    "post-processors": [
+      {
+        "type": "vagrant",
+        "keep_input_artifact": true,
+        "output": "{{.Provider}}_centos7-ebpf.box"
+      }
+    ]
+  }
