@@ -10,5 +10,5 @@ steps:
 - script: choco install packer
   displayName: 'echo install packer'
 
-- script: packer-build-verbose-logged.cmd Chyperv-centos-7-ebpf.json
+- script: packer-build-verbose-logged.cmd hyperv-centos-7-ebpf.json
   displayName: 'echo Build script for centos 7 eBPF with 4.9 kernel on HyperV !'
