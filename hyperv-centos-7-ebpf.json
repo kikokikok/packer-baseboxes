@@ -24,7 +24,6 @@
       "ssh_username": "{{user `username`}}",
       "ssh_password": "{{user `password`}}",	
       "ssh_timeout" : "4h",
-      "http_directory": "./linux/ubuntu/http/",
       "boot_wait": "5s",
       "boot_command": [
         "c  setparams 'kickstart' <enter> linuxefi /images/pxeboot/vmlinuz inst.stage2=hd:LABEL=CentOS\\x207\\x20x\\86_64 inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter> initrdefi /images/pxeboot/initrd.img<enter> boot<enter>"
@@ -49,10 +48,8 @@
             "type": "shell",
             "execute_command": "echo 'vagrant' | sudo -S -E sh {{.Path}}",
             "scripts": [
-                "./linux/ubuntu/network.sh",
                 "./linux/common/vagrant.sh",
                 "./linux/common/motd.sh",
-                "./linux/ubuntu/cleanup.sh",
                 "./linux/centos/ebpf-install.sh"
             ]
         }
