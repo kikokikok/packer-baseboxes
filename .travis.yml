@@ -4,4 +4,5 @@ os:
 install:
   - choco install packer
 script:
+  - cd
   - packer-build-verbose-logged.cmd hyperv-centos-7-ebpf.json
