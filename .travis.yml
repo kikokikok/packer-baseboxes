@@ -1,0 +1,7 @@
+language: shell
+os: 
+  - windows
+install:
+  - choco install packer
+script:
+  - packer-build-verbose-logged.cmd hyperv-centos-7-ebpf.json
